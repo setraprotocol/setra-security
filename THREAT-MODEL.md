@@ -9,13 +9,13 @@
 ## Attack Vectors
 
 ### 1. Intent Replay
-Nonce-based protection + settled mapping. Residual: negligible.
+Nonce-based protection + settled mapping. Residual risk: negligible (keccak256 collision required).
 
 ### 2. Front-running
 Fixed prices at signing. No MEV in DVP. Residual: low.
 
 ### 3. Signature Malleability
-OZ ECDSA with s-value normalization. Residual: negligible.
+OZ ECDSA with s-value normalization. Residual risk: negligible (keccak256 collision required).
 
 ### 4. Reentrancy
 ReentrancyGuard on all settlement functions. Residual: low.
